@@ -1,0 +1,28 @@
+* {
+	margin: 0;        /* App reset (delete margins and paddings). */
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;  /* App font size. */
+}
+
+body {
+	background: #F9F9F9;                 /* App background.        */
+	min-height: 100vh;                     /* Ensure minimum height. */
+	display: flex;                         /* App centered.          */
+	align-items: center;
+	justify-content: center;
+	font-family: 'Work Sans', sans-serif;  /* Loaded Google Fonts Family. */
+}
+
+#root {
+	width: 100%;
+}
+
+@media screen and (max-width: 60rem) {   /* Media query at 950px (60rem) */
+	:root {
+		font-size: 14px;
+	}
+}
