@@ -1,11 +1,11 @@
 * {
-	margin: 0;        /* App reset (delete margins and paddings). */
+	margin: 0;                             /* App reset (delete margins and paddings). */
 	padding: 0;
 	box-sizing: border-box;
 }
 
 :root {
-	font-size: 16px;  /* App font size. */
+	font-size: 16px;                       /* App font size. */
 }
 
 body {
