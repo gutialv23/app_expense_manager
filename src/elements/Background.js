@@ -12,6 +12,7 @@ const Background = () => {
         </>
     );
 }
+
 const Svg = styled.svg`
     height: 50vh;
     width: 100%;

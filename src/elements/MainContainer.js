@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const MainContainer = styled.div`
     background: #fff;                                /* White. */
     width: 90%;
     height: 90vh;
@@ -22,4 +22,4 @@ const Container = styled.div`
     }
 `;
  
-export default Container;
+export default MainContainer;

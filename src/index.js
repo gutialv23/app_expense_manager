@@ -8,14 +8,14 @@ import './index.css';
 import favicon from './images/favicon.png';
 
 // Elements.
-import Container from './elements/Container';
+import MainContainer from './elements/MainContainer';
 import Background from './elements/Background';
 
 // Components.
 import App from './App';
 import Login from './components/Login';
 import Register from './components/Register';
-import ExpensesList from './components/ExpensesList';
+import ExpenseList from './components/ExpenseList';
 
 // Fonts.
 import WebFont from 'webfontloader';
@@ -30,14 +30,14 @@ const Index = () => {
       </Helmet>
 
       <BrowserRouter>
-        <Container>
+        <MainContainer>
           <Switch>
-            <Route path="/login"         component={ Login        } />
-            <Route path="/register"      component={ Register     } />
-            <Route path="/expenses-list" component={ ExpensesList } />
-            <Route path="/"              component={ App          } />
+            <Route path="/login"        component={ Login       } />
+            <Route path="/register"     component={ Register    } />
+            <Route path="/expense-list" component={ ExpenseList } />
+            <Route path="/"             component={ App         } />
           </Switch>
-        </Container>
+        </MainContainer>
       </BrowserRouter>
 
       <Background />

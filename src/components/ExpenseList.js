@@ -4,21 +4,21 @@ import { Helmet } from 'react-helmet';
 // Elements.
 import { Header, HeaderContainer, HeaderTitle } from '../elements/Header';
 
-const Login = () =>
+const ExpenseList = () =>
 {
     return (
         <>
             <Helmet>
-                <title>User Login</title>
+                <title>Expense List</title>
             </Helmet>
 
             <Header>
                 <HeaderContainer>
-                    <HeaderTitle>User Login</HeaderTitle>
+                    <HeaderTitle>Expense List</HeaderTitle>
                 </HeaderContainer>
             </Header>
         </>
     );
 }
  
-export default Login;
+export default ExpenseList;
