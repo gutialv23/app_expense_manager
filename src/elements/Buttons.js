@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { Link, useHistory } from 'react-router-dom';
 import { ReactComponent as Arrow } from '../images/arrow.svg';
 
+const ButtonContainer = styled.div`
+	display: flex;
+	justify-content: ${ ( props ) => props.center ? 'center' : 'space-between' };
+	align-items: center;
+	margin-bottom: ${ ( props ) => props.center ? '2.5rem;' : '0' };
+`;
+
 const Button = styled( Link )`
 	background: ${(props) => props.primary ? '#5B69E2' : '#000'};  /* Primary buttons: blue. -- Secondary buttons: black. */
 	width: 'auto';
@@ -29,7 +36,10 @@ const Button = styled( Link )`
 `;
 
 const SquareButton = styled.button`
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.31rem;     /* 5px. */
 	width: 3.12rem;             /* 50px. */
 	height: 3.12rem;            /* 50px. */
 	line-height: 3.12rem;       /* 50px. */
@@ -38,10 +48,6 @@ const SquareButton = styled.button`
 	border: none;
 	background: #000;
 	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0.31rem;     /* 5px. */
 	cursor: pointer;
 
 	@media(max-width: 60rem) {  /* Media query at 950px.                         */
@@ -70,4 +76,4 @@ const BackButton = ( { route = '/' } ) =>
  
 export default BackButton;
 
-export { Button, BackButton };
+export { Button, BackButton, ButtonContainer };

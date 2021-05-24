@@ -2,8 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // Elements.
-import { Header, HeaderContainer, HeaderTitle, ButtonContainer } from './elements/Header';
-import { Button } from './elements/Buttons';
+import { Header, HeaderContainer, HeaderTitle } from './elements/Header';
+import { Button, ButtonContainer } from './elements/Buttons';
 
 const App = () => {
   return (

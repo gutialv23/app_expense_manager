@@ -12,6 +12,8 @@ const Header = styled.div`
 	}
 `;
 
+/* TODO: review this container. It may be not necessary. */
+
 const HeaderContainer = styled.div`
 	width: 100%;
 	display: flex;
@@ -41,10 +43,4 @@ const HeaderTitle = styled.h1`
 	}
 `;
 
-const ButtonContainer = styled.div`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-`;
-
-export { Header, HeaderContainer, HeaderTitle, ButtonContainer };
+export { Header, HeaderContainer, HeaderTitle };
