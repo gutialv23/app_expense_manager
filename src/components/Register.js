@@ -2,7 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // Elements.
-import { Header, HeaderContainer, HeaderTitle } from '../elements/Header';
+import { Header, HeaderTitle } from '../elements/Header';
+import { BackButton } from '../elements/Buttons';
 
 const Register = () =>
 {
@@ -13,9 +14,8 @@ const Register = () =>
             </Helmet>
 
             <Header>
-                <HeaderContainer>
-                    <HeaderTitle>User Register</HeaderTitle>
-                </HeaderContainer>
+                <BackButton />
+                <HeaderTitle>User Register</HeaderTitle>
             </Header>
         </>
     );

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 // Elements.
 import { Header, HeaderContainer, HeaderTitle, ButtonContainer } from './elements/Header';
-import Button from './elements/Button';
+import { Button } from './elements/Buttons';
 
 const App = () => {
   return (
