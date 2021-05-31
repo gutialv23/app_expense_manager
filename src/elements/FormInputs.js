@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../theme';
-import { ReactComponent as Icon } from '../images/register.svg';
+import { ReactComponent as IconRegister } from '../images/register.svg';
+import { ReactComponent as IconLogin    } from '../images/login.svg';
 
 const Form = styled.form`
 	padding: 0 2.5rem;  /* 40px. */
@@ -46,9 +47,14 @@ const InputContainer = styled.div`
     margin-bottom: 2.5rem;  /* 40px. */
 `;
 
-const SvgRegister = styled( Icon )`
+const SvgRegister = styled( IconRegister )`
     width: 100%;
 	max-height: 6.25rem;    /* 100px. */
 `;
 
-export { Form, Input, InputBig, InputContainer, SvgRegister };
+const SvgLogin = styled( IconLogin )`
+    width: 100%;
+	max-height: 12.5rem;    /* 200px. */
+`;
+
+export { Form, Input, InputBig, InputContainer, SvgRegister, SvgLogin };

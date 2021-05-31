@@ -16,15 +16,16 @@ const Register = () =>
 
             <Header>
                 <HeaderTitle>Create account</HeaderTitle>
+                <Button to="/login">Login</Button>
             </Header>
 
             <Form>
                 <SvgRegister />
 
                 <InputContainer>
-                    <Input type="email"    name="email"     placeholder="Email"          ></Input>
-                    <Input type="password" name="password"  placeholder="Password"       ></Input>
-                    <Input type="password" name="password2" placeholder="Repeat password"></Input>
+                    <Input type="email"    name="email"     placeholder="Email"           />
+                    <Input type="password" name="password"  placeholder="Password"        />
+                    <Input type="password" name="password2" placeholder="Repeat password" />
                 </InputContainer>
 
                 <ButtonContainer center >
